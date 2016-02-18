@@ -1,0 +1,245 @@
+/* line 4, ../../../scss/frontend/layouts/page.scss */
+#main {
+  margin: auto;
+  margin-top: 100px;
+  /**
+   *  MEDIUM SIZE
+   */
+  /**
+   *  TABLETTE SIZE 
+   */
+  /**
+   *  MOBILE SIZE 
+   */
+}
+@media screen and (max-width: 1200px) {
+  /* line 4, ../../../scss/frontend/layouts/page.scss */
+  #main {
+    margin-top: 70px;
+  }
+}
+/* line 17, ../../../scss/frontend/layouts/page.scss */
+#main a:not(.no-link-effect) {
+  position: relative;
+  text-decoration: none;
+  color: #383838;
+}
+/* line 22, ../../../scss/frontend/layouts/page.scss */
+#main a:not(.no-link-effect) .link_effect {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: #383838;
+}
+/* line 31, ../../../scss/frontend/layouts/page.scss */
+#main h1 {
+  line-height: 32px;
+  height: 32px;
+}
+/* line 35, ../../../scss/frontend/layouts/page.scss */
+#main h1 svg {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  float: left;
+  stroke: #383838;
+  stroke-width: 3px;
+  fill: transparent;
+}
+/* line 47, ../../../scss/frontend/layouts/page.scss */
+#main.home a .link_effect {
+  background-color: #f8954e;
+}
+/* line 48, ../../../scss/frontend/layouts/page.scss */
+#main.home a, #main.home h1, #main.home h2, #main.home h3, #main.home h4 {
+  color: #f8954e;
+}
+/* line 49, ../../../scss/frontend/layouts/page.scss */
+#main.home h1 svg {
+  stroke: #f8954e;
+}
+/* line 52, ../../../scss/frontend/layouts/page.scss */
+#main.projects a .link_effect {
+  background-color: #70c06d;
+}
+/* line 53, ../../../scss/frontend/layouts/page.scss */
+#main.projects a, #main.projects h1, #main.projects h2, #main.projects h3, #main.projects h4 {
+  color: #70c06d;
+}
+/* line 54, ../../../scss/frontend/layouts/page.scss */
+#main.projects h1 svg {
+  stroke-width: 0;
+  fill: #70c06d;
+}
+/* line 60, ../../../scss/frontend/layouts/page.scss */
+#main.profile a .link_effect {
+  background-color: #5673cb;
+}
+/* line 61, ../../../scss/frontend/layouts/page.scss */
+#main.profile a, #main.profile h1, #main.profile h2, #main.profile h3, #main.profile h4 {
+  color: #5673cb;
+}
+/* line 62, ../../../scss/frontend/layouts/page.scss */
+#main.profile h1 svg {
+  stroke: #5673cb;
+}
+/* line 65, ../../../scss/frontend/layouts/page.scss */
+#main.contact a .link_effect {
+  background-color: #e15757;
+}
+/* line 66, ../../../scss/frontend/layouts/page.scss */
+#main.contact a, #main.contact h1, #main.contact h2, #main.contact h3, #main.contact h4 {
+  color: #e15757;
+}
+/* line 67, ../../../scss/frontend/layouts/page.scss */
+#main.contact h1 svg {
+  stroke: #e15757;
+}
+/* line 70, ../../../scss/frontend/layouts/page.scss */
+#main #sidebar {
+  width: 200px;
+  float: right;
+  margin-top: 110px;
+}
+/* line 76, ../../../scss/frontend/layouts/page.scss */
+#main #sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 20px;
+}
+/* line 81, ../../../scss/frontend/layouts/page.scss */
+#main #sidebar ul a {
+  display: block;
+  width: 150px;
+}
+/* line 87, ../../../scss/frontend/layouts/page.scss */
+#main #sidebar.profile {
+  margin-top: 0;
+  position: fixed;
+  right: 50px;
+}
+/* line 93, ../../../scss/frontend/layouts/page.scss */
+#main #sidebar #profile-card {
+  border: 1px solid #D0D0D0;
+  border-top: 0;
+  -webkit-box-shadow: 0 0 8px #D0D0D0;
+  -moz-box-shadow: 0 0 8px #D0D0D0;
+  -ms-box-shadow: 0 0 8px #D0D0D0;
+  -o-box-shadow: 0 0 8px #D0D0D0;
+  box-shadow: 0 0 8px #D0D0D0;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+/* line 106, ../../../scss/frontend/layouts/page.scss */
+#main #sidebar #profile-card .profile-avatar {
+  margin: auto;
+  display: block;
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+  -webkit-border-radius: 64px;
+  -moz-border-radius: 64px;
+  -ms-border-radius: 64px;
+  border-radius: 64px;
+  -webkit-box-shadow: 0 0 5px #5673cb;
+  -moz-box-shadow: 0 0 5px #5673cb;
+  -ms-box-shadow: 0 0 5px #5673cb;
+  -o-box-shadow: 0 0 5px #5673cb;
+  box-shadow: 0 0 5px #5673cb;
+  border: 2px solid #5673cb;
+  margin-bottom: 20px;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -ms-transition-property: -ms-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+/* line 140, ../../../scss/frontend/layouts/page.scss */
+#main #sidebar #profile-card .profile-avatar:hover {
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+/* line 150, ../../../scss/frontend/layouts/page.scss */
+#main #sidebar .sidebar-icon {
+  width: 64px;
+  height: 64px;
+  margin: 5px 15px;
+}
+/* line 155, ../../../scss/frontend/layouts/page.scss */
+#main #sidebar .sidebar-icon-tooltip {
+  display: none;
+  position: absolute;
+  width: 98px;
+  text-align: center;
+}
+/* line 162, ../../../scss/frontend/layouts/page.scss */
+#main #sidebar .sidebar-link:hover .sidebar-icon-tooltip {
+  display: block;
+}
+/* line 165, ../../../scss/frontend/layouts/page.scss */
+#main #sidebar.profile .sidebar-icon {
+  stroke: #5673cb;
+  stroke-width: 2px;
+  fill: transparent;
+}
+@media screen and (max-width: 768px) {
+  /* line 180, ../../../scss/frontend/layouts/page.scss */
+  #main #sidebar.profile {
+    margin-top: 0;
+    position: static;
+    float: none;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: auto;
+  }
+  /* line 188, ../../../scss/frontend/layouts/page.scss */
+  #main #sidebar.profile #profile-card {
+    min-height: 135px;
+  }
+  /* line 190, ../../../scss/frontend/layouts/page.scss */
+  #main #sidebar.profile #profile-card .profile-avatar {
+    float: left;
+  }
+  /* line 193, ../../../scss/frontend/layouts/page.scss */
+  #main #sidebar.profile #profile-card p {
+    margin-left: 150px;
+    min-width: 100px;
+  }
+  /* line 198, ../../../scss/frontend/layouts/page.scss */
+  #main #sidebar.profile .sidebar-link {
+    display: none;
+  }
+}
+@media screen and (max-width: 460px) {
+  /* line 207, ../../../scss/frontend/layouts/page.scss */
+  #main #sidebar.profile #profile-card {
+    min-width: 220px;
+  }
+  /* line 209, ../../../scss/frontend/layouts/page.scss */
+  #main #sidebar.profile #profile-card .profile-avatar {
+    float: none;
+  }
+  /* line 212, ../../../scss/frontend/layouts/page.scss */
+  #main #sidebar.profile #profile-card p {
+    margin-left: 15px;
+  }
+  /* line 217, ../../../scss/frontend/layouts/page.scss */
+  #main #profile-pie li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* line 223, ../../../scss/frontend/layouts/page.scss */
+#main #profile-container {
+  margin-right: 250px;
+}

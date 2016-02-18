@@ -1,0 +1,316 @@
+#main {
+  /**
+   * Projects page
+   */ }
+  #main .listing header {
+    float: left; }
+  #main .listing-type {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px; }
+    #main .listing-type li {
+      float: left; }
+    #main .listing-type a {
+      text-indent: -9999px;
+      margin-left: 10px;
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: url("./css-frontend/listing-icon-32.png") no-repeat #555555; }
+    #main .listing-type li.listing-type-medium a {
+      background-position: -32px 0; }
+    #main .listing-type li.listing-type-full a {
+      background-position: -64px 0; }
+    #main .listing-type li.listing-type-scattered a {
+      background-position: -96px 0; }
+    #main .listing-type li a:hover {
+      background-color: #777; }
+  #main.home .listing-type li.active a, #main.home .listing-type li.active a:hover {
+    background-color: #f8954e; }
+  #main.projects .listing-type li.active a, #main.projects .listing-type li.active a:hover {
+    background-color: #70c06d; }
+  #main.profile .listing-type li.active a, #main.profile .listing-type li.active a:hover {
+    background-color: #5673cb; }
+  #main.contact .listing-type li.active a, #main.contact .listing-type li.active a:hover {
+    background-color: #e15757; }
+  #main #container-header .listing-type {
+    margin: 0;
+    padding: 0; }
+    #main #container-header .listing-type ul {
+      margin: 0;
+      padding: 0; }
+  #main .listing {
+    /**
+     *  LISTING ICON
+     */
+    /**
+     *  LISTING MEDIUM
+     */
+    /**
+     *  LISTING FULL
+     */
+    /**
+     * LISTING scattered
+     */ }
+    #main .listing ul.articles {
+      list-style-type: none;
+      margin: 0 35px;
+      padding: 0; }
+      #main .listing ul.articles li {
+        margin: 15px; }
+      #main .listing ul.articles .listing-item {
+        position: relative;
+        background-color: #fff;
+        -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+        -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+        -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+        -webkit-border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
+        -moz-border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
+        -ms-border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
+        -o-border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
+        border-radius: 1%     1%     1%     1% /     1%     1%     1%     1%;
+        /* Don't user :before and :after, we need acces with Javascript */ }
+        #main .listing ul.articles .listing-item .title {
+          float: none; }
+          #main .listing ul.articles .listing-item .title a {
+            text-decoration: none; }
+        #main .listing ul.articles .listing-item a.read-more {
+          float: right;
+          cursor: pointer; }
+        #main .listing ul.articles .listing-item .corner {
+          display: none; }
+        #main .listing ul.articles .listing-item .listing-item-after {
+          position: absolute;
+          width: 80%;
+          height: 40%;
+          left: 10%;
+          border-radius: 35%;
+          z-index: -1;
+          bottom: 10px;
+          content: "";
+          box-shadow: 0 7px 16px rgba(0, 0, 0, 0.4); }
+    #main .listing .listing-nav {
+      display: none;
+      /* dont display it for icon, midium and full listing */ }
+    #main .listing.icon img.banner, #main .listing.medium img.banner {
+      display: none; }
+    #main .listing.icon .title a, #main .listing.icon div.listing-item-img, #main .listing.medium .title a, #main .listing.medium div.listing-item-img {
+      display: block;
+      width: 100%; }
+    #main .listing.icon .title a, #main .listing.medium .title a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    #main .listing.icon ul.articles li {
+      float: left; }
+    #main .listing.icon ul.articles .listing-item {
+      width: 265px;
+      height: 250px; }
+      #main .listing.icon ul.articles .listing-item .title {
+        text-align: center;
+        padding: 5px 15px;
+        margin: 0;
+        margin-bottom: 10px; }
+        #main .listing.icon ul.articles .listing-item .title h3 {
+          margin-bottom: 3px; }
+      #main .listing.icon ul.articles .listing-item .date {
+        font-size: 0.7em;
+        font-weight: bold;
+        color: #555;
+        padding-left: 15px; }
+      #main .listing.icon ul.articles .listing-item img.thumb {
+        width: 225px;
+        height: 150px;
+        margin: 0 18px; }
+      #main .listing.icon ul.articles .listing-item div.description, #main .listing.icon ul.articles .listing-item a.read-more {
+        display: none; }
+    #main .listing.medium ul.articles li {
+      margin: 25px 15px; }
+    #main .listing.medium ul.articles .listing-item {
+      height: 200px;
+      padding-right: 25px; }
+      #main .listing.medium ul.articles .listing-item .title {
+        padding: 5px;
+        margin: 0;
+        margin-left: 275px; }
+        #main .listing.medium ul.articles .listing-item .title h3 {
+          margin-bottom: 3px; }
+        #main .listing.medium ul.articles .listing-item .title .date {
+          font-size: 0.7em;
+          font-weight: bold;
+          color: #555;
+          padding-left: 15px; }
+      #main .listing.medium ul.articles .listing-item img.thumb {
+        width: 225px;
+        height: 150px;
+        margin: 0 25px;
+        position: absolute;
+        top: 25px; }
+      #main .listing.medium ul.articles .listing-item div.description {
+        margin-left: 275px;
+        margin-bottom: 15px;
+        text-overflow: ellipsis;
+        height: 90px;
+        overflow: hidden; }
+    #main .listing.full .listing-item {
+      position: relative;
+      padding: 5px 15px;
+      margin-bottom: 30px; }
+      #main .listing.full .listing-item .date {
+        position: absolute;
+        bottom: 5px;
+        font-size: 0.7em;
+        font-weight: bold;
+        color: #555; }
+      #main .listing.full .listing-item img.thumb {
+        display: none; }
+      #main .listing.full .listing-item img.banner {
+        width: 100%; }
+      #main .listing.full .listing-item div.description {
+        margin: 15px 0; }
+    #main .listing.full .listing-item:last {
+      border-bottom: none; }
+    #main .listing.scattered ul.articles {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      overflow: hidden;
+      margin: 0;
+      padding: 0; }
+      #main .listing.scattered ul.articles .listing-item {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+        cursor: pointer;
+        width: 280px;
+        height: 310px;
+        background: #FFFFFF;
+        padding-top: 20px;
+        text-align: center;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0; }
+        #main .listing.scattered ul.articles .listing-item.active {
+          cursor: auto;
+          z-index: 11; }
+        #main .listing.scattered ul.articles .listing-item .title {
+          margin-top: 5px; }
+          #main .listing.scattered ul.articles .listing-item .title h3 {
+            margin: 0; }
+        #main .listing.scattered ul.articles .listing-item .corner {
+          display: block;
+          width: 48px;
+          height: 48px;
+          background: #FFF;
+          position: absolute;
+          right: 15px;
+          overflow: hidden;
+          -webkit-box-shadow: -3px 3px 5px 0px rgba(50, 50, 50, 0.75);
+          -moz-box-shadow: -3px 3px 5px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: -3px 3px 5px 0px rgba(50, 50, 50, 0.75); }
+          #main .listing.scattered ul.articles .listing-item .corner .read-more {
+            position: absolute;
+            right: 0;
+            text-align: right;
+            max-width: 48px; }
+            #main .listing.scattered ul.articles .listing-item .corner .read-more svg {
+              display: block;
+              height: 32px;
+              width: 32px;
+              float: right;
+              margin-bottom: 10px;
+              fill: #383838; }
+            #main .listing.scattered ul.articles .listing-item .corner .read-more span {
+              -webkit-transform-origin: 0% 0%;
+              -moz-transform-origin: 0% 0%;
+              -ms-transform-origin: 0% 0%;
+              -o-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+              -webkit-transform: rotate(45deg);
+              -moz-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              -o-transform: rotate(45deg);
+              transform: rotate(45deg);
+              display: block;
+              width: 125px;
+              position: relative;
+              top: -33px;
+              left: 0;
+              text-align: center;
+              height: 17px;
+              line-height: 17px;
+              font-size: 17px; }
+          #main .listing.scattered ul.articles .listing-item .corner .corner-triangle {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-bottom: 48px solid #CCC;
+            border-right: 648px solid transparent; }
+        #main .listing.scattered ul.articles .listing-item.active {
+          border: 1px solid #cccccc;
+          -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+          -moz-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+          -ms-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+          -o-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 0, 0, 0.1) inset; }
+          #main .listing.scattered ul.articles .listing-item.active .corner {
+            width: 48px;
+            height: 48px; }
+            #main .listing.scattered ul.articles .listing-item.active .corner .corner-triangle {
+              border-bottom: 48px solid #CCC;
+              border-right: 48x solid transparent; }
+    #main .listing.scattered .listing-nav {
+      display: block;
+      width: 64px;
+      height: 64px;
+      position: absolute;
+      left: 50%;
+      z-index: 12; }
+      #main .listing.scattered .listing-nav.listing-prev {
+        margin-left: -200px; }
+      #main .listing.scattered .listing-nav.listing-next {
+        margin-left: 136px; }
+      #main .listing.scattered .listing-nav svg {
+        stroke: #383838;
+        stroke-width: 2px;
+        fill: #e8e8e8;
+        opacity: 0.5; }
+      #main .listing.scattered .listing-nav:hover svg, #main .listing.scattered .listing-nav:focus svg, #main .listing.scattered .listing-nav:active svg, #main .listing.scattered .listing-nav.active svg {
+        opacity: 0.8; }
+  #main.projects .listing.icon {
+    margin-top: 100px; }
+    #main.projects .listing.icon ul.articles li {
+      margin: 0; }
+      #main.projects .listing.icon ul.articles li .listing-item {
+        width: 280px;
+        height: 310px;
+        background: #FFFFFF;
+        padding-top: 20px;
+        text-align: center;
+        margin: 5px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0; }
+        #main.projects .listing.icon ul.articles li .listing-item .title {
+          margin-top: 10px;
+          padding: 0; }
+        #main.projects .listing.icon ul.articles li .listing-item.active {
+          border: 1px solid #cccccc;
+          -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+          -moz-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+          -ms-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+          -o-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 0, 0, 0.1) inset; }
+  #main.projects .listing.scattered ul.articles .listing-item .corner .read-more svg {
+    fill: #70c06d; }

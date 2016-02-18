@@ -1,0 +1,25 @@
+/* line 4, ../../../scss/frontend/contents/single.scss */
+.single {
+  margin: 0 50px;
+  padding: 0;
+}
+
+/* line 10, ../../../scss/frontend/contents/single.scss */
+.image-section.thumb {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+/* line 14, ../../../scss/frontend/contents/single.scss */
+.image-section.small {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+/* line 19, ../../../scss/frontend/contents/single.scss */
+.image-section.large div {
+  width: 100%;
+}
+/* line 22, ../../../scss/frontend/contents/single.scss */
+.image-section.large img {
+  width: 100%;
+  margin-bottom: 10px;
+}
